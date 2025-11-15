@@ -34,7 +34,7 @@ class PublishingPlugin : Plugin<Project> {
         name.set(target.stringProperty("POM_NAME"))
         description.set(target.stringProperty("POM_DESCRIPTION"))
         inceptionYear.set("2023")
-        url.set("https://github.com/christiandeange/ozone")
+        url.set("https://github.com/cbruegg/ozone")
 
         licenses {
           license {
@@ -50,12 +50,17 @@ class PublishingPlugin : Plugin<Project> {
             name.set("Christian De Angelis")
             url.set("https://github.com/christiandeange")
           }
+          developer {
+            id.set("cbruegg")
+            name.set("Christian Brüggemann")
+            url.set("https://github.com/cbruegg")
+          }
         }
 
         scm {
-          url.set("https://github.com/christiandeange/ozone")
-          connection.set("scm:git:git://github.com/christiandeange/ozone.git")
-          developerConnection.set("scm:git:ssh://git@github.com/christiandeange/ozone.git")
+          url.set("https://github.com/cbruegg/ozone")
+          connection.set("scm:git:git://github.com/cbruegg/ozone.git")
+          developerConnection.set("scm:git:ssh://git@github.com/cbruegg/ozone.git")
         }
       }
 
